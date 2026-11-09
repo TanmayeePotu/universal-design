@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Grid</title>
+    <link href="6css.css" rel="stylesheet">
+</head>
+
+<body>
+    <a class="skip-link" href="#maincontent">Skip to Main Content</a>
+
+    <div class="container">
+
+
+        <header>
+            <h1>accessible css layout</h1>
+        </header>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#words1">Some Words</a></li>
+                <li><a href="#table">A Table</a></li>
+                <li><a href="#Thingies1">Thingies 1</a></li>
+                <li><a href="#Thingies2">Thingies 2</a></li>
+                <li><a href="#words2">Some More Words</a></li>
+                <li><a href="#myform">A Form</a></li>
+            </ul>
+        </nav>
+
+        <main id="maincontent">
+            <section>
+                <h2 id="words1">some words 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolor deserunt harum facilis,
+                    consequuntur magnam ut beatae sint possimus ducimus voluptate tempora necessitatibus maiores
+                    provident? Expedita quia assumenda id inventore?</p>
+
+                <h2 id="table">a table</h2>
+
+                <table>
+                    <caption>Very Important Emoticon Guide</caption>
+
+                    <thead>
+                        <tr>
+                            <th scope="col">Emoticon</th>
+                            <th scope="col">Emotion</th>
+                            <th scope="col">When to Use It</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">:)</th>
+                            <td>Happy</td>
+                            <td>When life is going pretty good</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">:(</th>
+                            <td>Sad</td>
+                            <td>When you remember you have homework</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">:P</th>
+                            <td>Silly</td>
+                            <td>When you're feeling a little goofy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">:O</th>
+                            <td>Shocked</td>
+                            <td>When you check your bank account</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">-_-</th>
+                            <td>Unimpressed</td>
+                            <td>When someone says something questionable</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">&lt;3</th>
+                            <td>Love</td>
+                            <td>When someone brings you food</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">:D</th>
+                            <td>Very Happy</td>
+                            <td>When your professor cancels class</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2 id="words2">some more words</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolor deserunt harum facilis,
+                    consequuntur magnam ut beatae sint possimus ducimus voluptate tempora necessitatibus maiores
+                    provident? Expedita quia assumenda id inventore?</p>
+
+                <h2>a form</h2>
+
+                <form id="myform" method="post">
+                    <fieldset>
+                        <legend>lmk how you feel about my websiteee :P</legend>
+
+                        <label for="name">What is your name?
+                            <input type="text" id="name" name="name" required>
+                        </label><br>
+
+                        <label for="email">What is your email?
+                            <input type="email" id="email" name="email" required>
+                        </label><br>
+
+                        <label for="phone">What is your phone number? standard rates apply.
+                            <input type="tel" id="phone" name="phone" minlength="7">
+                        </label><br>
+
+                        <label for="frequency">Scale of 1-10, how much do you like my colorful website?
+                            <input type="number" id="frequency" name="frequency" min="1" max="10">
+                        </label><br>
+
+                        <button type="submit">yay!</button>
+                    </fieldset>
+                </form>
+
+            </section>
+        </main>
+
+        <aside id="Thingies1">
+            <h2>Thingies 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste labore adipisci, quae natus, quibusdam
+                corporis perferendis doloribus nemo eligendi nostrum aperiam.</p>
+        </aside>
+
+        <aside id="Thingies2">
+            <h2>Thingies 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel iste labore adipisci, quae natus, quibusdam
+                corporis perferendis doloribus nemo eligendi nostrum aperiam.</p>
+        </aside>
+
+
+    </div>
+</body>
+
+</html>
