@@ -1,28 +1,105 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tanmayee Potu - Accessible Class Portal</title>
-  </head>
 
-  <body>
-    <h1>Tanmayee Potu </h1>
-    <h2>About me</h2>
-    <p>Hello, I am a senior studying business analytics and information management with a comp sci minor. I hope to have a future in healthcare analytics and hope to learn how to make things more accessible this semester.</p>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="landing.css" rel="stylesheet">
+</head>
 
-    <h2>Class Assignments</h2>
-    <p>
-      Assignment 1 <br>
-      Assignment 2<br>
-      Assignment 3<br>
+<body>
 
-      <a href="https://tanmayeepotu.github.io/universal-design/4/crochet-wiki.html"> Wikipedia Assignment <br>
+    <a class="skip-link" href="#maincontent">
+        Skip to Main Content
+    </a>
 
-      <a href="https://tanmayeepotu.github.io/universal-design/4b/crochet-wiki-pb.html"> Wikipedia Assignment part b <br>
+    <header>
+        <h1>
+            <span class="material-icons" aria-hidden="true">star</span>
+            Tanmayee Potu
+            <span class="material-icons" aria-hidden="true">star</span>
+        </h1>
+    </header>
 
-      <a href="https://tanmayeepotu.github.io/universal-design/5/tennis.html"> Assignment 5<br>
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#maincontent">Home</a></li>
+            <li><a href="#about">About Me</a></li>
 
-      <a href="https://tanmayeepotu.github.io/universal-design/6/assignment6.html"> Assignment 6<br>
-    </p>
-  </body>
+            <li class="dropdown">
+                <a href="#assignments" aria-haspopup="true">
+                    Assignments
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a href="#lab2">Lab 2</a></li>
+                    <li><a href="#lab3">Lab 3</a></li>
+                    <li><a href="#lab4">Lab 4</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="maincontent">
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="me.jpg" alt="Portrait of Tanmayee Potu" class="profile-photo">
+
+            <p>
+                I am a senior studying business analytics and
+                information management with a computer science
+                integration. I hope to have a future in healthcare
+                analytics and hope to learn how to make things
+                more accessible this semester.
+            </p>
+
+            <p>
+                I, as a classic Coloradan, enjoy spending time
+                outside and have ventured many of the hikes
+                Boulder has to offer. I am also a crafty person
+                and am commonly crocheting, painting, drawing,
+                or messing around with new mediums.
+            </p>
+        </section>
+
+        <section id="assignments">
+            <h2>Class Assignments</h2>
+
+        
+            <ul>
+
+                <li id="lab2">
+                    <a href="https://tanmayeepotu.github.io/universal-design/4b/crochet-wiki-pb.html">
+                        Lab #2 - Coding & Posting a Web Page - The Basics
+                    </a>
+                </li>
+
+                <li id="lab3">
+                    <a href="https://tanmayeepotu.github.io/universal-design/5/tennis.html">
+                        Lab #3 - Tables, Forms, Tabbed Browsing, and Screen Reading
+                    </a>
+                </li>
+
+                <li id="lab4">
+                    <a href="https://tanmayeepotu.github.io/universal-design/6/assignment6.html">
+                        Lab #4 - Accessible CSS Layout
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made by Tanmayee Potu :P</p>
+    </footer>
+
+</body>
+
 </html>
