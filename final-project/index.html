@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Accessibility</title>
+    <link href="final-project.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">ACCESS FOR ALL.</a>
+            <p>DESIGN WITHOUT BARRIERS</p>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>The web is for everyone.</h1>
+                <p>
+                    Good design doesn't leave people behind.
+                    Learn how we can make the internet more
+                    accessible, inclusive, and usable for everyone.
+                </p>
+            </div>
+
+            <!-- add a photo here -->
+        </section>
+
+
+        <nav class="ribbon" aria-label="Main navigation">
+            <a href="why.html">WHY <span aria-hidden="true">↗</span></a>
+            <a href="what.html">WHAT <span aria-hidden="true">↗</span></a>
+            <a href="how.html">HOW <span aria-hidden="true">↗</span></a>
+        </nav>
+
+
+        <section class="about">
+            <p class="section-label">OUR PURPOSE</p>
+
+            <h2>Accessibility isn't an extra feature.</h2>
+
+            <p>
+                The internet has become an essential part of our
+                everyday lives. We use it to learn, work, communicate,
+                and connect with others. But not everyone experiences
+                the web in the same way.
+            </p>
+
+            <p>
+                Universal design encourages us to create websites
+                that work for people with different abilities,
+                needs, and experiences. Accessibility should be
+                considered from the beginning of the design process,
+                not added as an afterthought.
+            </p>
+
+            <p>
+                This website explores why accessibility matters,
+                what universal design means, and how developers
+                can create a better web for everyone.
+            </p>
+        </section>
+
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Good design, delivered.</h2>
+
+                <p>
+                    Interested in learning more about accessible
+                    design? Sign up for accessibility tips,
+                    resources, and inspiration.
+                </p>
+
+                <form id="newsletter-form">
+                    <label for="email">Email address</label>
+
+                    <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email"
+                        required>
+
+                    <button type="submit">Subscribe</button>
+
+                    <p class="form-note">
+                        This is a demonstration form for an
+                        educational project. No emails are collected.
+                    </p>
+                    <p id="form-message" role="status"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p>Made by Tanmayee Potu | 2026</p>
+        <p>Designed with accessibility in mind.</p>
+
+    </footer>
+
+</body>
+
+</html>
